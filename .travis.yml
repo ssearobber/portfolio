@@ -21,3 +21,16 @@ after_install:
   - docker push dreamsctv/portfolio-frontend
   - docker push dreamsctv/portfolio-backend
   - docker push dreamsctv/portfolio-nginx
+
+deploy:
+  provider: elasticbeanstalk
+  region: 'us-east-2'
+  app: 'portfolio'
+  env: 'Portfolio-env'
+  bucker_name: elasticbeanstalk-us-east-2-856304157938
+  bucker_path: 'portfolio'
+  on:
+    branch: master
+
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
