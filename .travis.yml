@@ -6,7 +6,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t dreasmctv/react-portfolio -f ./frontend/Dockerfile.dev ./frontend
+  - docker build -t dreamsctv/react-portfolio -f ./frontend/Dockerfile.dev ./frontend
 
 script:
   - docker run -e CI=true dreamsctv/react-portfolio npm run test
