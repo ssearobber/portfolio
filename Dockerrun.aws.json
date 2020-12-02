@@ -3,21 +3,21 @@
   "containerDefinitions": [
     {
       "name": "frontend",
-      "image": "dreamsctv/docker-frontend",
+      "image": "dreamsctv/portfolio-frontend",
       "hostname": "frontend",
       "essential": false,
       "memory": 128
     },
     {
       "name": "backend",
-      "image": "dreamsctv/docker-backend",
+      "image": "dreamsctv/portfolio-backend",
       "hostname": "backend",
       "essential": false,
       "memory": 128
     },
     {
       "name": "nginx",
-      "image": "dreamsctv/docker-nginx",
+      "image": "dreamsctv/portfolio-nginx",
       "hostname": "nginx",
       "essential": true,
       "portMappings": [

@@ -12,12 +12,12 @@ script:
   - docker run -e CI=true dreamsctv/react-portfolio npm run test
 
 after_install:
-  - docker build -t dreamsctv/docker-frontend ./frontend
-  - docker build -t dreamsctv/docker-backend ./backend
-  - docker build -t dreamsctv/docker-nginx ./nginx
+  - docker build -t dreamsctv/portfolio-frontend ./frontend
+  - docker build -t dreamsctv/portfolio-backend ./backend
+  - docker build -t dreamsctv/portfolio-nginx ./nginx
 
   - echo "$DOCKER_HUB_PASSWORD" | docker login -u "$DOCKER_HUB_ID" --password-stdin
 
-  - docker push dreamsctv/docker-frontend
-  - docker push dreamsctv/docker-backend
-  - docker push dreamsctv/docker-nginx
+  - docker push dreamsctv/portfolio-frontend
+  - docker push dreamsctv/portfolio-backend
+  - docker push dreamsctv/portfolio-nginx
