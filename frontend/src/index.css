@@ -39,6 +39,10 @@ submit {
   align-self: center;
 }
 
+.header .profile img {
+  height: 24px;
+}
+
 .section {
   max-width: 1024px;
   margin: 15vh auto 0;
