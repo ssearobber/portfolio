@@ -1,13 +1,104 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+html {
+  /* font-family: 'Nerko One', cursive; */
+  font-weight: 700;
+  background-color: #efefef;
+  color: #444;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-size: 14px;
+}
+
+input,
+button,
+submit {
+  border: none;
+}
+
+.container {
+  /* iPhone 가로 스크롤 방지 */
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  align-content: center;
+  height: 32px;
+  padding: 0 16px;
+}
+
+.header .logo {
+  align-self: center;
+  font-size: 24px;
+}
+
+.header .profile {
+  margin-left: auto;
+  align-self: center;
+}
+
+.section {
+  max-width: 1024px;
+  margin: 15vh auto 0;
+  height: 90vh;
+  padding: 0 16px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  padding: 1.5em 5em;
+  background: #efefef;
+  border: none;
+  border-radius: 0.5rem;
+  color: #0984e3;
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.contents-wrapper {
+  display: flex;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 32px;
+}
+
+.neumorphism {
+  transition: 0.2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7), -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.neumorphism:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6), -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.neumorphism:active {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 2px 2px 2px rgba(255, 255, 255, 0.075),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  border-top: 1px solid #888;
 }
