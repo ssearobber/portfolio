@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
-html {
+html,
+body {
   /* font-family: 'Nerko One', cursive; */
   font-weight: 700;
   background-color: #efefef;
   color: #444;
-}
-
-body {
   margin: 0;
   font-size: 14px;
+  text-shadow: 1px 1px 1px #fff;
 }
 
 input,
@@ -56,17 +55,18 @@ submit {
 }
 
 button {
-  padding: 1.5em 5em;
+  padding: 0.5rem 1rem;
   background: #efefef;
   border: none;
   border-radius: 0.5rem;
   color: #0984e3;
-  font-size: 0.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
   text-align: center;
   outline: none;
   cursor: pointer;
+  text-shadow: 1px 1px 1px #fff;
 }
 
 .contents-wrapper {
