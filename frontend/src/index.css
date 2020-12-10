@@ -45,7 +45,6 @@ submit {
 .section {
   max-width: 1024px;
   margin: 15vh auto 0;
-  height: 90vh;
   padding: 0 16px;
 }
 
@@ -75,6 +74,12 @@ button {
   cursor: pointer;
 }
 
+.contents-wrapper:last-child {
+  display: flex;
+  margin: 16px 0;
+  cursor: pointer;
+}
+
 .text-box {
   display: flex;
   flex-direction: column;
@@ -101,8 +106,8 @@ button {
 
 .footer {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 24px;
   border-top: 1px solid #888;
 }
